@@ -1,0 +1,199 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.wall-paper {
+    min-height: 100vh;
+    width: 100%;
+    background-color: aqua;
+    color: white;
+    background-image: url(Background.png);
+    background-size: cover;
+
+
+}
+
+.dash {
+    border: 1px solid white;
+    background-color: white;
+
+}
+
+nav {
+    
+    
+    
+}
+
+
+
+nav ul {
+    width: 100%;
+    list-style-type: none;
+    display: flex;
+justify-content: flex-end;
+
+align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    padding: 8px;
+  
+}
+.logo{
+    margin-right: auto;
+   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: brown;
+}
+
+#get-started-button {
+    background: none;
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    padding: 5px 10px;
+}
+
+#get-started-button:hover {
+    color: black;
+    transform: scale(1.2);
+    background-color: white;
+
+}
+
+.sidebar{
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: burlywood;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.side-bar li{
+    width: 100%;
+}
+
+
+.hero {
+    padding: 50px;
+    width: 30%;
+
+}
+
+h1 {
+    font-weight: bolder;
+    font-size: 2.5rem;
+
+
+}
+
+h6 {
+    font-size: 0.75rem;
+}
+
+h2 {
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+.blog-card-wrapper {
+    padding: 2px;
+    display: flex;
+    gap: 2px;
+
+}
+
+.blog-card {
+    max-width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    border: 1px solid rgb(209, 194, 194);
+    padding-bottom: 10px;
+}
+
+.blog-card img {
+    max-width: 100%;
+
+}
+
+.blog-text {
+    max-width: 200px;
+    padding: 10px 20px;
+
+}
+
+#blog-card-date {
+    color: gray;
+    padding: 20px;
+}
+
+#Read-more {
+    font-weight: bolder;
+    margin: 10px;
+    float: right;
+    border: none;
+    color: burlywood;
+    background-color: white;
+
+}
+
+/*responsiveness*/
+
+@media screen and (max-width:760px) {
+    a:hover{color: black;
+    transform: scale(1.2);
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+    }    
+
+    .hero {
+        padding: 70px;
+        width: 80%;
+
+    }
+
+    h1 {
+
+        font-size: 2.7rem;
+
+    }
+
+    h6 {
+        font-size: 0.85rem;
+        width: 60%;
+    }
+    .desktop-menu{
+        display: none;
+    }
+}
+
+/*mobile responsiveness*/
+@media screen and (max-width: 500px) {
+    .blog-card-wrapper {
+        flex-direction: column;
+    }
+
+    .blog-card {
+        max-width: 80%;
+        margin-bottom: 10px;
+
+    }
